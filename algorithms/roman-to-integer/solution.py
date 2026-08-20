@@ -1,29 +1,21 @@
 class Solution:
-    def myAtoi(self, s: str) -> int:
-        i = 0
-        n = len(s)
+    def romanToInt(self, s: str) -> int:
+        values = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000
+        }
 
-        # 1. Skip leading whitespace
-        while i < n and s[i] == ' ':
-            i += 1
+        result = 0
 
-        # 2. Handle sign
-        sign = 1
-        if i < n and s[i] in '+-':
-            if s[i] == '-':
-                sign = -1
-            i += 1
+        for i in range(len(s)):
+            if i + 1 < len(s) and values[s[i]] < values[s[i + 1]]:
+                result -= values[s[i]]
+            else:
+                result += values[s[i]]
 
-        # 3. Convert digits
-        num = 0
-        while i < n and s[i].isdigit():
-            num = num * 10 + int(s[i])
-            i += 1
-
-        num *= sign
-
-        # 4. Clamp to 32-bit signed integer range
-        INT_MIN = -(2**31)
-        INT_MAX = 2**31 - 1
-
-        return max(INT_MIN, min(num, INT_MAX))  
+        return result
