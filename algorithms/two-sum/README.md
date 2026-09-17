@@ -1,6 +1,6 @@
 # Two Sum
 
-**Difficulty:** Easy
+**Difficulty:** Unknown
 
 **Language:** Python3
 
@@ -14,4 +14,4 @@ Automatically synchronized from LeetCode on September 17, 2026.
 
 ## Complexity
 
-> ⚠️ *Complexity analysis unavailable (Gemini API (gemini-pro): models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.).*
+> ⚠️ *Complexity analysis unavailable (Analysis timed out (connectivity / latency issue)).*
