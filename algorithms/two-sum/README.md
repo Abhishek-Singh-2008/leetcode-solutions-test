@@ -1,6 +1,6 @@
 # Two Sum
 
-**Difficulty:** Unknown
+**Difficulty:** Easy
 
 **Language:** Python3
 
