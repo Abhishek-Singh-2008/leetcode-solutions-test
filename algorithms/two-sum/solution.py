@@ -1,5 +1,5 @@
 class Solution:
-    #new test final 2 testing 
+    #new test final 2 testing ho ja bhai
     def twoSum(self, nums, target):
         seen = {}
         for i, num in enumerate(nums):
