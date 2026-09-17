@@ -1,6 +1,6 @@
 # Palindrome Number
 
-**Difficulty:** Unknown
+**Difficulty:** Easy
 
 **Language:** Python3
 
@@ -14,9 +14,9 @@ Automatically synchronized from LeetCode on September 17, 2026.
 
 ## Approach & Intuition
 
-> Convert the integer to a string and check whether it is a palindrome by comparing the string directly to its reversed slice.
+> Convert the integer to a string and check if the string is equal to its reverse.
 
 ## Complexity
 
-- **Time Complexity:** `O(log x)` — Converting the integer x to a string and reversing it requires linear time with respect to the number of digits, which is proportional to log10(x).
-- **Space Complexity:** `O(log x)` — Creating the string representation and its reversed slice allocates auxiliary memory proportional to the number of digits in x.
+- **Time Complexity:** `O(N)` — Converting the integer to a string and reversing/comparing it takes time proportional to the number of digits N in the integer.
+- **Space Complexity:** `O(N)` — Storing the string representation of the integer requires space proportional to the number of digits N.
