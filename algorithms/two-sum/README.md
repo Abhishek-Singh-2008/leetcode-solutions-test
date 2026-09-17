@@ -10,11 +10,8 @@ https://leetcode.com/problems/two-sum/
 
 ## Solution
 
-Automatically synchronized from LeetCode on August 16, 2026.
+Automatically synchronized from LeetCode on September 17, 2026.
 
 ## Complexity
 
-> Time: Not provided  
-> Space: Not provided
-
-<!-- Add your own complexity analysis above. -->
+> ⚠️ *Complexity analysis unavailable (window is not defined).*
