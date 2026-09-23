@@ -14,9 +14,9 @@ Automatically synchronized from LeetCode on September 23, 2026.
 
 ## Approach & Intuition
 
-> Kahn's algorithm for topological sorting: build an adjacency list and indegree array, enqueue all courses with indegree 0, then repeatedly dequeue a course, append it to the order, and decrement the indegree of its neighbors.
+> Use Kahn's topological sort: build an adjacency list and indegree counts, enqueue all courses with indegree 0, then repeatedly pop a course, append it to the order, and decrement neighbors' indegrees, enqueuing any that become 0.
 
 ## Complexity
 
-- **Time Complexity:** `O(V + E)` — Each course vertex is enqueued and dequeued at most once, and each prerequisite edge is processed exactly once.
-- **Space Complexity:** `O(V + E)` — The adjacency list stores all E edges plus V lists, while the indegree array and queue store up to V courses each.
+- **Time Complexity:** `O(V + E)` — Each vertex is enqueued and dequeued once, and each prerequisite edge is processed once, where V = numCourses and E = len(prerequisites).
+- **Space Complexity:** `O(V + E)` — The adjacency list stores O(V + E) edges/vertices, while the indegree array and queue use O(V) auxiliary space, excluding the returned order.
