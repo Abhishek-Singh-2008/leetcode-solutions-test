@@ -14,9 +14,9 @@ Automatically synchronized from LeetCode on September 26, 2026.
 
 ## Approach & Intuition
 
-> The center of a star graph must be the common node shared by every edge, so it suffices to inspect only the first two edges: whichever node from the first edge also appears in the second edge is the center.
+> The center of a star appears in every edge, so check whether the first endpoint of the first edge is in the second edge; if not, return the other endpoint.
 
 ## Complexity
 
-- **Time Complexity:** `O(1)` — The algorithm performs a single membership check against a fixed 2-element list (edges[1]), independent of the total number of edges.
-- **Space Complexity:** `O(1)` — Only a constant number of comparisons are used with no auxiliary data structures or recursion.
+- **Time Complexity:** `O(1)` — The algorithm checks membership in a two-element edge and performs a constant number of operations.
+- **Space Complexity:** `O(1)` — It uses only a constant amount of auxiliary space.
