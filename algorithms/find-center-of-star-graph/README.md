@@ -14,9 +14,9 @@ Automatically synchronized from LeetCode on September 26, 2026.
 
 ## Approach & Intuition
 
-> The center of a star appears in every edge, so check whether the first endpoint of the first edge appears in the second edge; if not, the other endpoint is the center.
+> Since the center of a star graph appears in every edge, it must be one of the two nodes in the first edge; check which of those two nodes also appears in the second edge and return it.
 
 ## Complexity
 
-- **Time Complexity:** `O(1)` — The solution checks membership in an edge containing exactly two vertices, requiring constant time.
-- **Space Complexity:** `O(1)` — The solution uses only a constant amount of auxiliary space.
+- **Time Complexity:** `O(1)` — The solution performs a single membership check against a fixed 2-element list, regardless of the number of edges.
+- **Space Complexity:** `O(1)` — Only constant extra space is used, with no additional data structures or recursion.
