@@ -2,7 +2,7 @@
 
 **Difficulty:** Easy
 
-**Language:** Python3
+**Language:** Java
 
 ## Problem
 
@@ -14,9 +14,9 @@ Automatically synchronized from LeetCode on September 26, 2026.
 
 ## Approach & Intuition
 
-> The center of a star appears in every edge, so check whether the first endpoint of the first edge is in the second edge; if not, return the other endpoint.
+> Count the degree of every node by iterating over all edges, then return the unique node whose degree equals n-1, since the center of a star graph is connected to every other node.
 
 ## Complexity
 
-- **Time Complexity:** `O(1)` — The algorithm checks membership in a two-element edge and performs a constant number of operations.
-- **Space Complexity:** `O(1)` — It uses only a constant amount of auxiliary space.
+- **Time Complexity:** `O(N)` — The algorithm makes one pass over the N-1 edges to build degree counts and one pass over N nodes to find the degree n-1 node, giving linear time.
+- **Space Complexity:** `O(N)` — An auxiliary degree array of size N+1 is allocated to store the degree count of each node.
