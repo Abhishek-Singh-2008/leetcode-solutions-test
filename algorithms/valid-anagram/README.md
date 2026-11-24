@@ -7,6 +7,23 @@
 
 ## Solutions
 
+### 🐍 Python3 — Approach 2 (`solution_2.py`)
+
+- **Synchronized:** November 24, 2026
+- **Language:** `Python3`
+- **Source File:** [`solution_2.py`](solution_2.py)
+
+#### 💡 Approach & Intuition
+
+> The solution checks if two strings are anagrams by sorting both strings and comparing the resulting sorted character sequences for equality.
+
+#### ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(N log N)` — *Sorting two strings of combined length N takes O(N log N) time.*
+- **Space Complexity:** `O(N)` — *The sorting algorithm requires O(N) auxiliary space to store the character lists in memory.*
+
+---
+
 ### 🐍 Python3 (`solution.py`)
 
 - **Synchronized:** November 24, 2026
