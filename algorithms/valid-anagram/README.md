@@ -7,6 +7,18 @@
 
 ## Solutions
 
+### 🐍 Python3 — Approach 3 (`solution_3.py`)
+
+- **Synchronized:** November 24, 2026
+- **Language:** `Python3`
+- **Source File:** [`solution_3.py`](solution_3.py)
+
+#### ⏱️ Complexity Analysis
+
+> ⚠️ *Complexity analysis unavailable (Invalid JSON response received from LLM).*
+
+---
+
 ### 🐍 Python3 — Approach 2 (`solution_2.py`)
 
 - **Synchronized:** November 24, 2026
